@@ -6,10 +6,10 @@
 
         <div class="optionsDiv">
             <ul class="optionsUl">
-                <li><a href="#"><h3>Home</h3></a></li>
-                <li><a href="#"><h3>Products</h3></a></li>
-                <li><a href="#"><h3>Contact</h3></a></li>
-                <li><a href="#"><h3>About</h3></a></li>
+                <li><a href="#" routerLink="home"><h3>Home</h3></a></li>
+                <li><a href="#" routerLink="products"><h3>Products</h3></a></li>
+                <li><a href="#" routerLink="contact"><h3>Contact</h3></a></li>
+                <li><a href="#" routerLink="about"><h3>About</h3></a></li>
                
             </ul>
 
@@ -17,8 +17,10 @@
 
         <div class="buttonsDiv">
             <button class="SwitchThemeBtn">SwitchTheme</button>
-            <button class="LoginBtn">Login</button>
-            <button class="SignUpBtn">Sign-Up</button>
+            <button class="LoginBtn" [routerLink]="'/login'">Login</button>
+            <button class="SignUpBtn" [routerLink]="'/signup'">Sign-Up</button>
         </div>
     </div>
 </nav>
+
+
